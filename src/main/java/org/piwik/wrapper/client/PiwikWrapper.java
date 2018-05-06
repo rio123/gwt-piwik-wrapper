@@ -44,7 +44,7 @@ public class PiwikWrapper {
     public static PiwikWrapper instance = new PiwikWrapper();
 
 
-    public PiwikConfig getConfig(String piwikUrl, int siteId) {
+    public PiwikConfig getConfig(String piwikUrl, String siteId) {
         initLoader(piwikUrl, siteId);
         return new PiwikConfig() {
 
@@ -66,7 +66,7 @@ public class PiwikWrapper {
         };
     }
 
-    private native void initLoader(String piwikUrl, int siteId) /*-{
+    private native void initLoader(String piwikUrl, String siteId) /*-{
         $wnd.rootUrl = piwikUrl || "//127.0.0.1/";
         $wnd.thisSiteId = siteId || 1;
         $wnd.piwikLoader = function () {
