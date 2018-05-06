@@ -32,8 +32,7 @@ PiwikConfig config = PiwikWrapper.instance.getConfig("//127.0.0.1/", 1);
 <dependency>
   <groupId>org.piwik</groupId>
   <artifactId>gwt-piwik-wrapper</artifactId>
-  <version>1.0</version>
-  <scope>provided</scope>
+  <version>1.1</version>
 </dependency>
 
 ```
