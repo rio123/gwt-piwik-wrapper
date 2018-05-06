@@ -3,7 +3,7 @@ GWT wrapper for the Piwik analytics platform
 
 ## Recommended versions of environment
   - GWT 2.7.0
-  - Piwik 2.16.x
+  - Piwik 2.16.x, Matomo 3.4.x, SiteUrlTrackingID Plugin
   - Java 8
 
 
